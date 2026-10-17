@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            SuperDev
+        </h1>
+
+        <nav>
+            <a href="./index.html">Início</a>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <p>
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" name="nome" id="nome" minlength="3" maxlength="100" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" id="email" required>
+            </p>
+ 
+            <p>
+                <label for="telefone">Telefone:</label>
+                <br>
+                <input type="tel" name="telefone" id="telefone" placeholder="(47) 996789274" required>
+            </p>
+
+            <p>
+                <label for="data-nascimento">Data nascimento</label>
+                <br>
+                <input type="date" name="data-nascimento" id="data-nascimento">
+            </p>
+
+            <p>
+            <h3>Modalidade de preferência</h3>
+            <label for="presencial">Presencial</label>
+            <input type="radio" name="presencial" id="presencial" value="presencial">
+
+            <label for="online">Online</label>
+            <input type="radio" name="online" id="online" value="online">
+            </p>
+
+            <p>
+                <label for="curso">Curso desejado:</label>
+                <select id="curso" name="curso">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" min="1" max="100">
+            </p>
+
+            <p>
+            <h2>Assuntos de interesse (pode escolher mais de um)</h2>
+
+            <label>Banco de dados</label>
+            <input type="checkbox" value="Banco de dados">
+
+            <label>Machine learning</label>
+            <input type="checkbox" value="Machine learning">
+
+            <label>GitHub</label>
+            <input type="checkbox" value="GitHub">
+
+            </p>
+
+            <p>
+                <label>Observação:</label>
+                <br>
+                <textarea placeholder="Observação" maxlength="255"></textarea>
+            </p>
+
+            <button>
+                Enviar
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>
