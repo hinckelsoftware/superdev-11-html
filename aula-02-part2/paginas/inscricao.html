@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel & Play</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pixel & Play</h1>
+        <h2>Festival de games e cultura pop</h2>
+
+        <nav>
+            <a href="../index.html">Inicio |</a>
+            <a href="./inscricao.html">Inscrição |</a>
+            <a href="./programacao.html">Programação</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulário de participação</h2>
+
+            <form>
+                <fieldset>
+                    <legend>1. Dados do participante</legend>
+
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <br>
+                        <input type="text" id="nome" name="nome" placeholder="Alex Silva" maxlength="10"
+                            autocomplete="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="euDaSilva@gmail.com" required
+                            autocomplete="email">
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone:</label>
+                        <br>
+                        <!--REGEX-->
+                        <input type="tel" id="telefone" name="telefone" placeholder="47 99999-9999" pattern="[0-9]{11}"
+                            required autocomplete="tel">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Ingresso e data</legend>
+
+                    <p>
+                        <label for="ingresso">Tipo de Ingresso:</label>
+                        <br>
+                        <select>
+                            <option value="">Escolha o ingresso</option>
+                            <option value="inteira">Inteira</option>
+                            <option value="meia">Meia-entrada</option>
+                            <option value="cortesia">Cortesia</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="qtdIngresso">Quantidade de ingressos:</label>
+                        <br>
+                        <input type="number" id="qtdIngresso" name="qtdIngresso" min="1" max="4">
+                    </p>
+
+                    <p>
+                        <label for="dia">Dia da visita:</label>
+                        <br>
+                        <input type="date" id="dia" name="dia" min="2026-11-21" max="2026-11-22" required>
+                    </p>
+
+                    <p>
+                        <label for="hrChegada">Horário aproximado de chegada:</label>
+                        <br>
+                        <input type="time" min="11:00" max="15:00" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Seus interesses</legend>
+
+                    <h4>Escolha a sua atração:</h4>
+                    <p>
+                        <label for="arena">Arena retro</label>
+                        <input type="radio" id="arena" name="arena">
+                        <br>
+
+                        <label for="pixel-art">Oficina Pixel Art</label>
+                        <input type="radio" id="pixel-art" name="pixel-art">
+                        <br>
+
+                        <label for="cosplay">Desfile de cosplay</label>
+                        <input type="radio" id="cosplay" name="cosplay">
+                        <br>
+                    </p>
+                </fieldset>
+
+                <p>Outras atividades de interesse (pode marcar várias):</p>
+
+                <p>
+                    <label for="campeonato">campeonato</label>
+                    <input type="checkbox" id="campeonato" name="campeonato">
+                </p>
+
+                <p>
+                    <label for="colecionismo">Colecionismo</label>
+                    <input type="checkbox" id="colecionismo" name="colecionismo">
+                </p>
+
+                <p>
+                    <label for="oficinas">Oficinas</label>
+                    <input type="checkbox" id="oficinas" name="oficinas">
+                </p>
+
+                <p>
+                    <label for="pulseira">Cor de pulseira preferida:</label>
+                    <br>
+                    <input type="color" id="pulseira" name="pulseira" value="#33bbcc">
+                </p>
+
+                <p>
+                    <label for="interesse">Interesse em games: de 1 (baixo) a 5 (alto):</label>
+                    <br>
+                    <input type="range" id="interesse" name="interesse" min="1" max="5" step="1" value="3">
+                </p>
+
+                <p>
+                    <label for="foto">Foto da fantasia <small>Aceitamos somente arquivos em png, jpg,
+                            jpeg</small></label>
+                    <br>
+                    <input type="file" accept="image/png,image/jpg,image/jpeg" id="foto" name="foto">
+                </p>
+
+                <p>
+                    <label for="obs">Observaçôes:</label>
+                    <br>
+                    <textarea id="obs" name="obs" maxlength="250" rows="5" cols="45"
+                        placeholder="Alguma preferência ou duvida?"></textarea>
+                </p>
+
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pixel & Play - Projeto para a aula de HTML 5</p>
+        <a href="../index.html"">Voltar ao conteúdo principal</a>
+    </footer>
+</body>
+
+</html>
